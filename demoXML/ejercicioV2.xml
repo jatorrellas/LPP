@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Repositorio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicioV2.xsd" >
+	<Ejercicio Titulo="Ejercicio 1">
+	        <ID>1</ID>
+	        <Enunciado>Cuantos lenguajes de programación cononce</Enunciado>
+	        <NivelEjercicio>Principiante</NivelEjercicio>
+	        <Orientado>false</Orientado>
+	        <Solucion>
+	            <Lenguaje>pseudocodigo</Lenguaje>
+	            <NivelSolucion>Principiante</NivelSolucion>
+	            <Codigo>
+	                <LineaCodigo>Primera Linea</LineaCodigo>
+	                <LineaCodigo>Segunda Linea</LineaCodigo>
+	                <LineaCodigo>Tercera Linea</LineaCodigo>
+	            </Codigo>	            
+	        </Solucion>
+	</Ejercicio>
+	<Ejercicio Titulo="Ejercicio 2">
+	        <ID>1</ID>
+	        <Enunciado>Recursividad Fibonacci</Enunciado>
+	        <NivelEjercicio>Principiante</NivelEjercicio>
+	        <Orientado>true</Orientado>
+	        <Solucion>
+	            <Lenguaje>Java</Lenguaje>
+	            <NivelSolucion>Principiante</NivelSolucion>
+	            <Codigo>
+	                <LineaCodigo>Primera Linea</LineaCodigo>
+	                <LineaCodigo>Segunda Linea</LineaCodigo>
+	                <LineaCodigo>Tercera Linea</LineaCodigo>
+	                <LineaCodigo>Cuarta Linea</LineaCodigo>
+	            </Codigo>	            
+	        </Solucion>
+	</Ejercicio>
+	<Ejercicio Titulo="Ejercicio 3">
+	        <ID>1</ID>
+	        <Enunciado>Estructuras de datos</Enunciado>
+	        <NivelEjercicio>Intermedio</NivelEjercicio>
+	        <Orientado>true</Orientado>
+	        <Solucion>
+	            <Lenguaje>PHP</Lenguaje>
+	            <NivelSolucion>Intermedio</NivelSolucion>
+	            <Codigo>
+	                <LineaCodigo>Primera Linea</LineaCodigo>
+	                <LineaCodigo>Segunda Linea</LineaCodigo>
+	                <LineaCodigo>Tercera Linea</LineaCodigo>
+	            </Codigo>	            
+	        </Solucion>
+	</Ejercicio>
+	<Ejercicio Titulo="Ejercicio 4">
+	        <ID>1</ID>
+	        <Enunciado>Conectividad de Redes</Enunciado>
+	        <NivelEjercicio>Avanzado</NivelEjercicio>
+	        <Orientado>false</Orientado>
+	        <Solucion>
+	            <Lenguaje>C</Lenguaje>
+	            <NivelSolucion>Avanzado</NivelSolucion>
+	            <Codigo>
+	                <LineaCodigo>Primera Linea</LineaCodigo>
+	                <LineaCodigo>Segunda Linea</LineaCodigo>
+	                <LineaCodigo>Tercera Linea</LineaCodigo>
+	                <LineaCodigo>Cuarta Linea</LineaCodigo>
+	                <LineaCodigo>Quinta Linea</LineaCodigo>
+	            </Codigo>	            
+	        </Solucion>
+	</Ejercicio>
+	<Ejercicio Titulo="Ejercicio 5">
+	        <ID>1</ID>
+	        <Enunciado>Inteligencia Artificial</Enunciado>
+	        <NivelEjercicio>Superior</NivelEjercicio>
+	        <Orientado>true</Orientado>
+	        <Solucion>
+	            <Lenguaje>Python</Lenguaje>
+	            <NivelSolucion>Superior</NivelSolucion>
+	            <Codigo>
+	                <LineaCodigo>Primera Linea</LineaCodigo>
+	                <LineaCodigo>Segunda Linea</LineaCodigo>
+	                <LineaCodigo>Tercera Linea</LineaCodigo>
+	            </Codigo>	            
+	        </Solucion>
+	</Ejercicio>
+</Repositorio>

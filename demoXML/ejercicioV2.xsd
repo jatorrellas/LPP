@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- Definimos el tipo de dato TipoNivel para su reutilizacion -->
+	 <xsd:simpleType name="TipoNivel">
+	 	<xsd:restriction base="xsd:string">
+	 		<xsd:enumeration value="Principiante" />
+	 		<xsd:enumeration value="Intermedio" />
+	 		<xsd:enumeration value="Avanzado" />
+	 		<xsd:enumeration value="Superior" />
+	 	</xsd:restriction>
+	 </xsd:simpleType>
+	 <!-- Definimos el tipo de dato TipoLenguaje para su reutilizacion -->
+	 <xsd:simpleType name="TipoLenguaje">
+	 	<xsd:restriction base="xsd:string">
+	 		<xsd:enumeration value="Java" />
+	 		<xsd:enumeration value="C" />
+	 		<xsd:enumeration value="Python" />
+	 		<xsd:enumeration value="PHP" />
+	 		<xsd:enumeration value="pseudocodigo" />
+	 	</xsd:restriction>
+	 </xsd:simpleType>
+	 <xsd:element name="Repositorio">
+	 	<xsd:complexType>
+			<xsd:sequence>
+	     <xsd:element name="Ejercicio" maxOccurs="unbounded">
+	         <xsd:complexType>
+	            <xsd:sequence>
+	                 <xsd:element name="ID" type="xsd:int"/>
+	                 <xsd:element name="Enunciado" minOccurs="1">
+	                    <xsd:simpleType>
+	                        <xsd:restriction base="xsd:string">
+	                            <xsd:minLength value="8"/>
+	                            <xsd:maxLength value="255"/>
+	                        </xsd:restriction>
+	                    </xsd:simpleType>
+	                 </xsd:element>
+	                 <xsd:element name="NivelEjercicio" type="TipoNivel" />
+	                 <xsd:element name="Orientado" type="xsd:boolean"/>
+	                 <xsd:element name="Solucion" minOccurs="0" maxOccurs="unbounded">
+	                 	<xsd:complexType>
+	                 		<xsd:sequence>
+	                 			<xsd:element name="Lenguaje" type="TipoLenguaje"/>
+	                 			<xsd:element name="NivelSolucion" type="TipoNivel"/>
+	                 			<xsd:element name="Codigo">
+	                 				<xsd:complexType>
+	                 					<xsd:sequence>
+	                 						<xsd:element name="LineaCodigo" type="xsd:string" maxOccurs="unbounded"/>
+	                 					</xsd:sequence>
+	                 				</xsd:complexType>
+	                 			</xsd:element>
+	                 		</xsd:sequence>                 		
+	                 	</xsd:complexType>	                 	
+	                 </xsd:element>	                 
+	            </xsd:sequence>
+	            <xsd:attribute name="Titulo" type="xsd:string"/>	         
+        	</xsd:complexType>       
+   		</xsd:element><!-- Fin Elemento Ejercicio -->
+      </xsd:sequence>
+   </xsd:complexType>
+   </xsd:element><!-- Fin Elemento Repositorio -->
+</xsd:schema>
