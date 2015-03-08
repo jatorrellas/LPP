@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ejercicio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio.xsd" Titulo="Ejercicio 1">
+        <ID>1</ID>
+        <Enunciado>Cuantos lenguajes de programación cononce</Enunciado>
+        <Nivel>Principiante</Nivel>
+</Ejercicio>
